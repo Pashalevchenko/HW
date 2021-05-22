@@ -229,9 +229,9 @@ h3{
     align-items: center;
     justify-content: center;
     width: 400px;
-    min-height: 300px;
+    height: 655px;
     margin: 50px;
-    background: #929292;
+    background: #aaa9a9;
     border: 2px solid #000;
 }
 .fourth__header{
@@ -371,7 +371,11 @@ margin-top: 20px;
     height: 40px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: rgb(100, 100, 100);
+    background: rgb(121, 121, 121);
     border: 2px solid #000;
 
+}
+h2{
+    position: relative;
+    font-size: 10px;
 }
