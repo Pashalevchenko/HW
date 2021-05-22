@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 400px;
+    margin: 50px;
+
+}
+.widgets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background: #00BFFF;
+}
+
+.block_container{
+    display: flex;
+    width: 100%;
+    
+}
+.big_widgets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    flex-grow: 1;
+    background: #000080;
+    /* border: 2px solid #fff; */
+
+}
+
+.big_widgets:nth-child(2){
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background: #00BFFF;
+}
+h2{
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+}
+h3{
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.second{
+    height: 600px;
+    width: 400px;
+    margin: 50px;
+    /* border: 3px solid red; */
+}
+
+
+.second__box_container{
+    width: 400px;
+    height: 50%;
+    display: flex;
+}
+.second__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background: #4169E1;
+}
+.second__box:nth-child(1){
+    border-right: 2px solid #fff;
+}
+
+.second__box_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    background: #4169E1;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+}
+.second__holder{
+    display: flex;
+}
+.second__box_3{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    flex-grow: 1;
+    background: #000080;
+}
+
+.second__box_3:nth-child(2){
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.second__box_3 h3{
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 200;
+}
+
+
+.third{
+    min-height: 200px;
+    width: 400px;
+    margin: 50px;
+    /* border: 3px solid red; */
+}
+
+.third__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: #5b83fc;
+    border-bottom: 2px solid #fff;
+}
+
+.third__container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+
+}
+
+.third__box_holder{
+    height: 100%;
+    width: 40%;
+    border-right: 2px solid #fff;
+}
+.third__hero{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background: #DDA0DD;
+    border-bottom: 2px solid #fff;
+}
+.third__sidebar{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 60%;
+    background: #09a109;
+}
+
+.third__box_holder_2{
+    height: 100%;
+    width: 60%;
+}
+
+.third__box_1{
+    text-align: center;
+    padding: 10px;
+    height: 70%;
+    width: 100%;
+    background: #c2c207;
+    border-bottom: 2px solid #fff;
+}
+.third__box_1 p{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 100;
+    margin: 5px;
+}
+.third__box_2{
+    text-align: center;
+    padding: 10px;
+    height: 30%;
+    width: 100%;
+    background: #696969;
+}
+
+.third__container_2{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.third__box_3{
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    width: 75%;
+    background: #008000;
+    border-right: 2px solid #fff;
+}
+.third__box_4{
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    width: 25%;
+    background: #ec98ec;
+}
+.third__footer{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    background: #e98502;
+}
+
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    min-height: 300px;
+    margin: 50px;
+    background: #929292;
+}
+.fourth__header{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+ width: 97%;
+ height: 60px;
+ background: #D3D3D3;
+ border: 2px solid #000;
+}
+
+.fourth__nav{
+    margin-top: 25px;
+    height: 25px;
+    width: 95%;
+    background: #ffffff;
+    border: 2px solid #000;
+}
+.fourth__container{
+    display: flex;
+    margin-top: 10px;
+    width: 97%;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.fourth__box_1{
+
+    
+}

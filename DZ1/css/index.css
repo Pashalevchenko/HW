@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    background: #08c;
+    color: #fff;
+}
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+a:hover{
+    color: red;
+}
+
+img{
+    width: 200px;
+}
