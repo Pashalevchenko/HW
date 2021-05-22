@@ -232,6 +232,7 @@ h3{
     min-height: 300px;
     margin: 50px;
     background: #929292;
+    border: 2px solid #000;
 }
 .fourth__header{
 display: flex;
@@ -255,7 +256,7 @@ margin-top: 20px;
     justify-content: space-between;
     margin-top: 10px;
     width: 97%;
-    height: 500px;
+    height: 480px;
 }
 
 .fourth__box_1{
@@ -268,9 +269,12 @@ margin-top: 20px;
     border: 2px solid #000;
     
 }
-.fourth_box_1_holder{
+.fourth_box_holder{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
     width: 94%;
     height: 450px;
 }
@@ -278,8 +282,10 @@ margin-top: 20px;
 .fourth__header_2{
     border: 2px solid #000;
     height: 35px;
-    width: 100%%;
+    width: 100%;
     background: #fff;
+    position: relative;
+    top: 5px;
 }
 
 .fourth__nav_2{
@@ -307,9 +313,65 @@ margin-top: 20px;
 }
 .fourth__header_3{
     border: 2px solid #000;
-    margin-top: 8px;
+    position: relative;
+    top: 25px;
     height: 35px;
-    width: 94%;
+    width: 100%;
     background: #fff;
+
+}
+.fourth__article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 100%;
+    background: rgb(173, 172, 172);
+    border: 2px solid #000;
+}
+
+.fourth__article_holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 8px;
+    width: 96%;
+    height: 83%;
+}
+
+.fourth__content{
+    width: 100%;
+    height: 25px;
+    background: #fff;
+    border: 2px solid #000;
+}
+.fourth__content_2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+.fourth__content_2_box{
+    height: 100%;
+    width: 64%;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.fourth__content_2_box_2{
+    height: 100%;
+    width: 33%;
+    background: #fff;
+    border: 2px solid #000;
+}
+.fourth__footer{
+    width: 97%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: rgb(100, 100, 100);
+    border: 2px solid #000;
 
 }
