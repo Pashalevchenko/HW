@@ -13,9 +13,11 @@
 }
 .decoration{
     text-decoration: none;
-
 }
 
+.color_30A{
+    color: #30ABAE;
+}
 
 .header{
     margin: 0 auto;
@@ -55,6 +57,7 @@
 }
 
 .content__block{
+    display: flex;
     padding-left: 207px;
 }
 
@@ -66,19 +69,131 @@
  text-transform: capitalize;
  font-size: 18px;
 }
-.content__categ ul{
+.content__list{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 14px;
     list-style: none;
     margin-top: 16px;
 }
 
-.content__categ a{
+
+
+
+.content__cat{
+    display: block;
     text-decoration: none;
     font-size: 14px;
     color: #414141;
+    padding: 2px 115px 2px 21px;
+    width: 230px;
     border: 1px solid #E4E4E4;
     border-radius: 50px;
-    padding: 5px 115px 5px 21px;
+}
+
+
+.border_blue{
+    border: 1px solid #63C0C2;
+    border-radius: 50px;
+}
+.bacgraund_color{
+    background: #E4E4E4;
+}
+
+.content__silver_block{
+    position: absolute;
+    top: 150px;
+    width: 693px;
+    height: 656px;
+    background: #F2F5F1;
+    z-index: -9999;
+}
+
+.content__all{
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.content__main_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    margin: 100px 0 0 150px;
+}
+.content__main_block h3{
+    font-weight: bold;
+    font-size: 21px;
+    padding-top: 10px;
+}
+.content__main_block ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    column-gap: 10px;
+    padding: 3px 0 30px 0;
+}
+
+.point{
+    background-color: #C0C0C0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+.content__main_block li{
+    color: #C0C0C0;
+    font-size: 12px;
+
+}
+
+.content__main_block p{
+    font-size: 14px;
+    border-top: 1px solid #ED8651;
+    padding-top: 30px;
+    line-height: 24px;
+}
+.content__main_block a{
+    position: relative;
+    line-height: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #30ABAE;
+    padding: 15px 50px 80px 128px;
+}
+.mg70{
+ margin-left: 70px;
+}
+
+.content__main_block_row_2{
+    display: flex;
+    width: 1027px;
+    padding-left: 150px;
+}
+.transition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    width: 1440px;
+    background: #F2F5F1;
+    margin: 0 auto;
+}
+.transition a{
+    margin: 47px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: #AAAAAA;
+    
+}
+
+.transition img{
+    margin: 0 40px;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 1445px;
+    height: 90px;
+    background-color: #16595A;;
 }
