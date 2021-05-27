@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif
 }
+
+
 .dark29{
     color: #292929;
 }
@@ -173,6 +175,31 @@
     transform: translateX(-50%);
 }
 
+.play::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    transform: scale(0.5);
+    opacity: .2;
+    animation: pulse 1500ms linear infinite;
+
+}
+@keyframes pulse{
+    0%{
+        transform: scale(0.5);
+        opacity: .2;
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: .8;
+
+    }
+}
+
 .play__one{
     width: 96px;
     height: 96px;
@@ -228,4 +255,72 @@
     text-transform: uppercase;
     font-weight: 900;
     font-size: 58px;
+}
+
+.mobile_button{
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.mobile_button span{
+    width: 80%;
+    height: 5px;
+    background-color: #3298f2;
+    position: relative;
+    transition: background-color 300ms 100ms;
+}
+
+
+
+.mobile_button span::before, .mobile_button span::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #3298f2;
+}
+
+.mobile_button span::before{
+    top: -10px;
+}
+
+.mobile_button span::after{
+    bottom: -10px;
+}
+
+.mobile_button span::before{
+    transition-property: top, transform;
+}
+
+.mobile_button span::after{
+    transition-property: bottom, transform;
+}
+    
+
+.mobile_button span::before, .mobile_button span::after{
+    transition-duration: 300ms, 300ms;
+    transition-delay: 300ms, 0ms;
+}
+
+.active .mobile_button span{
+    background-color: transparent;
+}
+
+.active .mobile_button span::before{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.active .mobile_button span::after{
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.active .mobile_button span::before, .active .mobile_button span::after{
+    transition-duration: 300ms, 300ms;
+    transition-delay: 0ms, 300ms;
 }

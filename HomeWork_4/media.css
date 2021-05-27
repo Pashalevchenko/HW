@@ -1,0 +1,40 @@
+@media screen and (max-width: 576px){
+    .wrapper{
+        max-width: 512px;
+    
+    
+    }
+
+    .header_nav{
+        position: absolute;
+        width: 100vw;
+        background: #3298f2;
+        left: -100%;
+        flex-direction: column;
+        height: 93vh;
+        top: 93px;
+        transition: left 1s;
+        row-gap: 25px;
+        padding-top: 50px;
+        z-index: 9999;
+    }
+    .header_nav a{
+        color: #fff;
+        font-weight: 700;
+    }
+    .active .header_nav{
+        left: 0;
+    }
+    .header_button{
+        display: none;
+    }
+    .header_logo img{
+        width: 90px;
+    }
+}
+
+.mobile_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
