@@ -170,7 +170,7 @@
     border: 1px solid #ff9638;
     border-radius: 50%;
     position: absolute;
-    left: 50%;
+    left: 930px;
     top: 63%;
     transform: translateX(-50%);
 }
@@ -323,4 +323,9 @@
 .active .mobile_button span::before, .active .mobile_button span::after{
     transition-duration: 300ms, 300ms;
     transition-delay: 0ms, 300ms;
+}
+
+.video{
+    display: none;
+
 }
