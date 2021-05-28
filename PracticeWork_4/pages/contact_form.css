@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.black_text{
+    color: #000;
+}
+
+.decoration{
+    text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+}
+
+.header{
+    margin: 0 auto;
+    border-bottom: 1px solid #C4C4C4;
+    width: 1440px;
+}
+
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 66px;
+    padding: 0 204px;
+
+}
+.header__nav_list{
+    display: flex;
+    column-gap: 56px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header__links{
+    display: flex;
+    column-gap: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+}
+.contact h2{
+    top: 30px;
+    right: 200px;
+    position: relative;
+    font-size: 72px;
+}
+
+.contact__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28px;
+    width: 505px;
+}
+
+.input{
+    font-weight: bold;
+    font-size: 18px;
+    width: 505px;
+    height: 54px;
+    color: #C4C4C4;
+    padding-left: 21px;
+    border: 1px solid #C4C4C4;
+    outline-style: none;
+}
+.input:focus{
+    color: #000;
+    font-weight: bold;
+}
+    
+
+.contact__input{
+    margin: 100px 0 154px 0;
+}
+
+.contact__input textarea{
+    width: 505px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #C4C4C4;
+    padding: 21px 0 0 21px;
+    border: 1px solid #C4C4C4;
+    outline-style: none;
+}
+
+.contact__input textarea:focus{
+    color: #000;
+    font-weight: bold;
+}
+.btn{
+    width: 295px;
+    height: 55px;
+    background: #30ABAE;
+    border-radius: 3px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.footer{
+    margin: 0 auto;
+    width: 1445px;
+    height: 90px;
+    background-color: #16595A;;
+}
+
+
