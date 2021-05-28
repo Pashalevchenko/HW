@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.black_text{
+    color: #000;
+}
+
+.decoration{
+    text-decoration: none;
+}
+.bold{
+    font-weight: bold;
+}
+
+.header{
+    margin: 0 auto;
+    border-bottom: 1px solid #C4C4C4;
+    width: 1440px;
+}
+
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 66px;
+    padding: 0 204px;
+
+}
+.header__nav_list{
+    display: flex;
+    column-gap: 56px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header__links{
+    display: flex;
+    column-gap: 30px;
+}
+
+.main_photo{
+    position: relative;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.main_photo h2{
+    z-index: 9999;
+    position: absolute;
+    top: 463px;
+    left: 455px;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.main_photo__points{
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.main_photo__points li{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #30ABAE;
+}
+
+.main_photo__points li:nth-child(2){
+    border: 2px solid #000;
+}
+
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 35px auto;
+    width: 1440px;
+}
+.place h2{
+    font-size: 36px;
+}
+
+.place__container{
+    display: flex;
+    column-gap: 118px;
+    margin: 39px 0 0 62px;
+}
+
+.place__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 342px;
+
+}
+
+.place__box h3{
+    margin: 16px 0 26px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+}
+
+.place__box h3::after{
+    content: 'Мароккс#90';
+    color: gray;
+    padding-left: 35px;
+
+}
+.place__box p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    border-left: 2px solid #ED8651;
+    padding-left: 23px;
+}
+
+.after_2::after{
+    content: 'Камбоджа';
+    color: gray;
+    padding-left: 35px;
+
+}
+
+.after_3::after{
+    content: 'Туреччина';
+    color: gray;
+    padding-left: 35px;
+
+}
+
+.footer{
+    margin: 0 auto;
+    width: 1445px;
+    height: 90px;
+    background-color: #16595A;;
+}
