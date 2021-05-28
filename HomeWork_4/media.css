@@ -31,9 +31,6 @@
     .header_logo img{
         width: 90px;
     }
-    .first_screen__container{
-        flex-direction: column;
-    }
     .first_screen__right{
         display: none;
     }
