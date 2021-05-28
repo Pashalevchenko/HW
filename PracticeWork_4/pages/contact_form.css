@@ -47,6 +47,7 @@
     align-items: center;
     width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 .contact h2{
     top: 30px;
@@ -107,6 +108,16 @@
     color: #fff;
     font-size: 18px;
 
+}
+
+.content__silver_block{
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    width: 742px;
+    height: 800px;
+    background: #F2F5F1;
+    z-index: -9999;
 }
 
 .footer{
