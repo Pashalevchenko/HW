@@ -23,7 +23,7 @@
 .header__nav_manu{
     display: flex;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 42px;
     font-size: 18px;
     position: relative;
     
@@ -43,8 +43,16 @@
 
 .header__drop_down_manu{
     display: none;
-    position: absolute;
+    background: #222220;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 11px 9px;
     width: 172px;
+    position: absolute;
+}
+
+.header_nav_manu:last-child:hover .header__drop_down_manu{
+    display: block;
 }
 
 .header__phone{
@@ -80,4 +88,35 @@
 .header__btn:hover{
     background-color: #fff;
     color: #CB3B48;
+}
+
+.news_section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: url(img/bg.png) no-repeat 50%/cover;
+}
+
+.news_section__text{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.news_section__slider{
+    display: flex;
+    margin-top: 30px;
+}
+
+.arr{
+   position: relative;
+   top: 125px;
+   cursor: pointer;
+   transition: filter .5s;
+   height: 50px;
+}
+
+.arr:hover{
+    filter: invert(1);
 }
