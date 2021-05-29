@@ -38,7 +38,7 @@
 
 .header__nav_manu a:hover{
     color: #CB3B48;
-    ;
+    
 }
 
 .header__drop_down_manu{
@@ -51,8 +51,13 @@
     position: absolute;
 }
 
-.header_nav_manu:last-child:hover .header__drop_down_manu{
+.hov:hover .header__drop_down_manu{
     display: block;
+}
+
+
+.header__drop_down_item{
+    border-top: 2px solid #2F2F2F;;
 }
 
 .header__phone{
@@ -119,4 +124,88 @@
 
 .arr:hover{
     filter: invert(1);
+}
+
+.bar_manu{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #222220;
+}
+
+
+.bar_manu__text{
+    display: flex;
+    column-gap: 40px;
+    margin-top: 35px;
+}
+
+.bar_manu__text h3{
+    font-size: 30px;
+    color: #505050;
+    text-transform: uppercase;
+}
+
+.bar_manu__text h3:last-child{
+    color: #fff;
+}
+
+.bar_manu__nav{
+    display: flex;
+}
+
+.bar_manu__dishes_list{
+    display: flex;
+    list-style: none;
+}
+
+.bar_manu__dishes_list a{
+    color: #fff;
+    text-decoration: none;
+}
+.bar_manu__search{
+    display: flex;
+}
+.bar_manu__search input{
+    border: 1px solid #B7B7B7;
+    outline-style: none;
+    background: #222220;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 15px 0 16px 23px;
+    font-size: 16px;
+    
+}
+
+.bar_manu__btn{
+    height: 50px;
+    width: 50px;
+    background-color: #CB3B48;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 15px #CB3B48;
+    
+}
+
+.bar_manu__btn::after{
+    content:'' ;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: 8px;
+    left: 8px;
+}
+.bar_manu__btn::before{
+    content: '';
+    height: 2px;
+    width: 13px;
+    position: absolute;
+    top: 31px;
+    left: 26px;
+    background-color: #fff;
+    transform: rotate(45deg);
 }
