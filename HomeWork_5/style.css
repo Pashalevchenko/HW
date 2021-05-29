@@ -140,28 +140,45 @@
     margin-top: 35px;
 }
 
+
+
 .bar_manu__text h3{
     font-size: 30px;
     color: #505050;
     text-transform: uppercase;
+    transition: color .5s;
 }
 
 .bar_manu__text h3:last-child{
     color: #fff;
 }
-
+.bar_manu__text h3:hover{
+    color: #CB3B48;
+}
 .bar_manu__nav{
     display: flex;
+    margin-top: 32px;
 }
 
 .bar_manu__dishes_list{
     display: flex;
     list-style: none;
+    column-gap: 53px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    padding-right: 33px;
+    justify-content: space-between;
+    font-size: 18px;
 }
 
 .bar_manu__dishes_list a{
     color: #fff;
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+.bar_manu__dishes_list a:hover{
+    color: #CB3B48;
 }
 .bar_manu__search{
     display: flex;
@@ -175,6 +192,7 @@
     border-bottom-left-radius: 5px;
     padding: 15px 0 16px 23px;
     font-size: 16px;
+    color: #B7B7B7;
     
 }
 
@@ -186,7 +204,12 @@
     cursor: pointer;
     border: none;
     box-shadow: 0px 0px 15px #CB3B48;
+    transition: .5s;
     
+}
+
+.bar_manu__btn:hover{
+    background-color: #fff;
 }
 
 .bar_manu__btn::after{
@@ -198,6 +221,11 @@
     border: 2px solid #fff;
     top: 8px;
     left: 8px;
+    transition: .5s;
+}
+
+.bar_manu__btn:hover::after{
+    border: 2px solid #CB3B48;
 }
 .bar_manu__btn::before{
     content: '';
@@ -208,4 +236,43 @@
     left: 26px;
     background-color: #fff;
     transform: rotate(45deg);
+    transition: .5s;
+}
+
+.bar_manu__btn:hover::before{
+    background-color: #CB3B48;
+}
+
+.bar_manu__filter{
+    margin-top: 34px;
+}
+
+
+.bar_manu__filter_btn{
+    display: flex;
+    align-items: center;
+    width: 155px;
+    height: 50px;
+    background: #CB3B48;
+    box-shadow: 0px 0px 14.9668px #CB3B48;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bar_manu__filter_btn a{
+    display: flex;
+    align-items: center;
+    width: 155px;
+    height: 50px;
+    padding-left: 19px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.bar_manu__filter_btn img{
+    position: absolute;
+    top: 12px;
+    right: 19px;
 }
