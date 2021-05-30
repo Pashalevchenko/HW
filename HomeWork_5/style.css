@@ -378,10 +378,131 @@
     text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
 }
-.bar_manu__shut_item_1 img{
+
+.bar_manu__price button:hover{
+    color: #CB3B48;
+    background-color: #fff;
+}
+.bar_manu__btn_img{
     position: absolute;
     bottom: 0;
     left: 78px
 }
 
+.bar_manu__big{
+    margin-top: 56px;
+    display: flex;
+    column-gap: 25px;
+}
+
+.big{
+    position: relative;
+    height: 600px;
+}
+.bar_manu__big_pic{
+    position: relative;
+    right: 33px;
+    bottom: 22px;
+}
+
+
+.bar_manu__show_more_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 194px;
+    height: 47px;
+    border: none;
+    background-color: #CB3B48;
+    color: #fff;
+    margin: 60px auto;
+    box-shadow: 0px 0px 14.9668px #CB3B48;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.footer{
+    background: url(img/footer_bg.png) #161615;
+}
+
+.footer__manu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left{
+    padding-top: 34px;
+}
+
+
+.footer__ref_1{
+    margin-top: 23px;
+
+}
+.footer__ref_1 a{
+    color: #9C9C9C;
+    font-size: 14px;
+}
+
+
+.footer__mid{
+    margin-top: 45px;
+}
+.footer__mid ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 80px;
+    width: 387px;
+
+}
+
+
+.footer__mid a{
+    color: #DCDCDC;
+    font-size: 18px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.footer__mid p{
+    margin-top: 30px;
+    color: #9C9C9C;
+    font-size: 14px;
+}
+
+
+.footer__right{
+    
+}
+.footer__right a{
+    font-weight: bold;
+    font-size: 25px;
+    color: #BD2D43;
+    text-decoration: none;
+}
+
+.footer__right p{
+    color: #8F8F8F;
+    font-size: 14px;
+} 
+.footer__icon_link{
+    display: flex;
+}
+.footer__icon_link a{
+
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+   
+}
