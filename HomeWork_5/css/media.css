@@ -8,7 +8,12 @@
 
     
     .header__top{
+        position: fixed;
+        z-index: 9999;
         height: 75px;
+        width: 375px;
+        background-color: #222220;
+        padding: 0 20px;
     }
     .header__logo img{
         width: 200px;
@@ -17,19 +22,41 @@
     .header__btn{
         display: none;
     }
-    .header__item{
+  
+    .header__nav_manu{
+     column-gap: 23px;
+}
+    .header__nav{
         display: none;
     }
-    .header__nav_manu{
-    column-gap: 23px;
-}
-
+    
+    .header__nav_mob{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        z-index: 9999;
+        width: 375px;
+        height: 1000vh;
+        row-gap: 40px;
+        background: #161615;
+        top: 37px;
+        left: -631px;
+        transition: 0.7s;
+    }
+    .active{
+        left: -232px;
+    }
+    
     .mobili_phone{
         display: flex;
         flex-direction: column;
-    
-        
+        transition: 0.7s;
     }
+    .rotete{
+        transform: rotate(-90deg);
+    }
+
 
     .mobili_phone__line{
         width: 15px;
@@ -53,6 +80,10 @@
 
     .news_section__item img{
         width: 150px;
+    }
+
+    .news_section__slider{
+        margin-top: 50px;
     }
 
     .none{
@@ -178,7 +209,7 @@
 
     .bar_manu__big{
         flex-wrap: wrap;
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 12px;
         margin-top: 10px;
         height: 680px;
@@ -263,5 +294,7 @@
     .footer__icon_link{
         column-gap: 15px;
     }
+
+   
 }
     

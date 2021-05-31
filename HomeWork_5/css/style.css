@@ -33,6 +33,8 @@
 
 }
 
+
+
 .header__nav_manu a{
     text-decoration: none;
     color: #fff;
@@ -44,6 +46,15 @@
     
 }
 
+
+.header__nav{
+    display: flex;
+    column-gap: 30px;
+}
+
+.header__nav_mob{
+    display: none;
+}
 .header__drop_down_manu{
     display: none;
     background: #222220;
@@ -129,6 +140,9 @@
     display: flex;
     margin-top: 30px;
 }
+.news_section__item img{
+    width: 230px;
+}
 
 .arr{
    position: relative;
@@ -141,6 +155,8 @@
 .arr:hover{
     filter: invert(1);
 }
+
+
 
 .bar_manu{
     display: flex;
