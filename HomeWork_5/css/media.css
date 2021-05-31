@@ -6,6 +6,7 @@
     
     }
 
+
     .header__top{
         position: fixed;
         z-index: 9999;
@@ -187,6 +188,9 @@
     .bar_manu__price p{
         font-size: 21px;
     }
+    .bar_manu__price p::after{
+        font-size: 10px;
+    }
     .bar_manu__price button{
         height: 20px;
         width: 100%;
@@ -194,8 +198,11 @@
         margin-top: 15px;
     }
 
-    .bar_manu__btn_img{
-        left: 45px;
+    .bar_manu__btn_img_mob{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 42px
     }
 
     .bar_manu__big{

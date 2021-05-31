@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .none_dis{
     display: none;
 }
@@ -414,10 +415,14 @@
     color: #CB3B48;
     background-color: #fff;
 }
+
+.bar_manu__btn_img_mob{
+    display: none;
+}
 .bar_manu__btn_img{
     position: absolute;
     bottom: 0;
-    left: 78px
+    left: 70px;
 }
 
 .bar_manu__big{
