@@ -45,7 +45,7 @@
 
 // let a1 = (10 * 4) - 6
 // let a2 = 144 / 6 - 12
-// let a3 = '6' + 6 - 0  
+// let a3 = '6' + 6 - 0
 // let a4 = 200 - 120 + 10
 // let a5 = 3 * 28 + 3
 // console.log(a1)
@@ -115,7 +115,7 @@
 // let heightC = 10
 // let dC = 4
 
-// let v = (Math.PI * Math.pow((dC/2), 2)) * heightC 
+// let v = (Math.PI * Math.pow((dC/2), 2)) * heightC
 // console.log(v)
 
 
@@ -187,12 +187,12 @@
 
 
 
-     let str = "20";
-     let a = 5;
-     document.write(str + a + "<br/>"); // JS видит, что string + num и переводит num в string, происходит конкатенация
-     document.write(str - a + "<br/>"); // конкатенация работает только с плюсом, если другой оперетор, js преобразует в num и выполняет операцию
-     document.write(str * "2" + "<br/>"); // аналогично 
-     document.write(str / 2 + "<br/>");// И тут так)
+     // let str = "20";
+     // let a = 5;
+     // document.write(str + a + "<br/>"); // JS видит, что string + num и переводит num в string, происходит конкатенация
+     // document.write(str - a + "<br/>"); // конкатенация работает только с плюсом, если другой оперетор, js преобразует в num и выполняет операцию
+     // document.write(str * "2" + "<br/>"); // аналогично
+     // document.write(str / 2 + "<br/>");// И тут так)
 
 
 
@@ -248,15 +248,28 @@
 
 
 
-    // let num1 = prompt('num1')
-    // let num2 = prompt('num2')
-    // let num3 = prompt('num3')
+    let n1 = +prompt('Введіть число № 1')
+    let n2 = +prompt('Введіть число № 2')
+    let n3 = +prompt('Введіть число № 3')
 
-    // if (num1 > num2 && num3, num2 > num3){
-    //     console.log(num1)
-    //     console.log(num2)
-    //     console.log(num3)
-    // }
+    if (n1 >= n2 && n1 >= n3 && n2 >= n3){
+      console.log(n3, n2, n1)
+    } else if (n2 >= n1 && n2 >= n3 && n1 >= n3){
+      console.log(n3, n1, n2)
+
+    } else if (n1 >= n3 && n1 >= n3 && n2 <= n3){
+      console.log(n2, n3, n1)
+    } else if (n3 >= n1 && n3 >= n2 && n1 >= n2){
+      console.log(n2, n1, n3)
+
+    } else if (n2 >= n1 && n2 >= n3 && n1 <= n3){
+      console.log(n1, n3, n2)
+    } else if (n3 >= n1 && n3 >= n2 && n2 >= n1){
+      console.log(n1, n2, n3)
+
+    }else {
+      console.log('Введено некоректні дані')
+    }
 
 
 
