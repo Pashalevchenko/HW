@@ -252,7 +252,9 @@
     // let num2 = prompt('num2')
     // let num3 = prompt('num3')
 
-
+    // if (num1 > num2 && num3, num2 > num3){
+    //     console.log(num1)
+    // }
 
 
 
@@ -301,26 +303,30 @@
 
 
 
-let color = prompt('какой цвет светофора?')
-
-let isRoadClear = confirm('На дороге есть машины?')
 
 
-if (color === 'зеленый' && isRoadClear === false){
-    alert('иди')
-}else if(color === 'зеленый' && isRoadClear === true){
-    alert('подожди пока нарушители проедут')
-}else if(color === 'желтый' && isRoadClear === true){
-    alert('жди')
-}else if(color === 'желтый' && isRoadClear === false){
-    alert('все рано жди')
-}else if(color === 'красный' && isRoadClear === false){
-    alert('стой все рано')
-}else if(color === 'красный' && isRoadClear === true){
-    alert('стой и жди')
-}else{
-    alert('делай что хочешь')
-}
+
+
+// let color = prompt('какой цвет светофора?')
+
+// let isRoadClear = confirm('На дороге есть машины?')
+
+
+// if (color === 'зеленый' && isRoadClear === false){
+//     alert('иди')
+// }else if(color === 'зеленый' && isRoadClear === true){
+//     alert('подожди пока нарушители проедут')
+// }else if(color === 'желтый' && isRoadClear === true){
+//     alert('жди')
+// }else if(color === 'желтый' && isRoadClear === false){
+//     alert('все рано жди')
+// }else if(color === 'красный' && isRoadClear === false){
+//     alert('стой все рано')
+// }else if(color === 'красный' && isRoadClear === true){
+//     alert('стой и жди')
+// }else{
+//     alert('делай что хочешь')
+// }
 
 
 
