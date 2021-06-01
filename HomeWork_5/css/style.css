@@ -363,8 +363,7 @@
 
 .bar_manu__shut_item_1{
     width: 380px;
-    background: url(../img/bg__shot.png) ;
-    background-color: #161615;
+    background: #161615 url(../img/bg__shot.png) ;
     border-radius: 20px;
     position: relative;
     padding: 20px 0 0 33px;
