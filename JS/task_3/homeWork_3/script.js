@@ -6,7 +6,7 @@
     
 // let arr =[]
 
-// for (i = 0; i < 10; i++){
+// for (let i = 0; i < 10; i++){
 //   num = Math.floor(Math.random() * (25 - 3) + 3)
 //   arr.push(num)
 // }
@@ -94,8 +94,8 @@
 
 
 
-//     // for (i = 0;i < arr.length; i++){        
-//     //     for (j = 0; j < arr.length; j++){  
+//     // for (let i = 0;i < arr.length; i++){        
+//     //     for (let j = 0; j < arr.length; j++){  
 //     //         if(arr[i] >= arr[j]){
 //     //             let max = arr[i] 
 //     //             console.log(max)
@@ -168,7 +168,7 @@
 
 // function arrSum(arrey){
 //     let sum = 0
-//     for (i = 0;i < arrey.length; i++){
+//     for (let i = 0;i < arrey.length; i++){
 //         sum = sum + arrey[i]
 //         res = sum/arrey.length
         
@@ -203,7 +203,7 @@
 
 // function newArr(array){
 //     let keyArr =[]
-//         for (i = 0;i < array.length; i++){
+//         for (let i = 0;i < array.length; i++){
 //             for (const key in array[i]){
 //                 keyArr.push(key)
                 
@@ -233,7 +233,7 @@
 
 // function newArr(array){
 //     let object =[]
-//         for (i = 0;i < array.length; i++){
+//         for (let i = 0;i < array.length; i++){
 //             for (const key in array[i]){
                 
 //                 object.push(array[i][key])
@@ -268,28 +268,28 @@
 
 
 
-// let array_1 = [1,2,3,4]
-// let array_2 = [2,3,4,5]
+let array_1 = [1,2,3,4]
+let array_2 = [2,3,4,5]
 
 
-// function sum(a, b){
-//     e = []
-//     for (c of a){
-//         for( d of b){
-//             if(a.indexOf(c) === b.indexOf(d)){
-//                 e.push(+c + +d)
-//             }
-//         }
+function sum(a, b){
+    e = []
+    for (c of a){
+        for( d of b){
+            if(a.indexOf(c) === b.indexOf(d)){
+                e.push(+c + +d)
+            }
+        }
         
-//     }
+    }
 
-//     return e
+    return e
 
     
-// }
+}
 
-// let result = sum(array_1, array_2)
-// console.log(result)
+let result = sum(array_1, array_2)
+console.log(result)
 
 
 

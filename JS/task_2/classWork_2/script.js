@@ -7,7 +7,7 @@
 // let a = ['a', 'b', 'c']
 
 
-// for (i = 1; i < 4; i++){
+// for (let i = 1; i < 4; i++){
 //     a.push(i)
    
 // }
@@ -47,7 +47,7 @@
 // let c = [1, 2, 3]
 
 
-// for (i = 4; i < 7; i++){
+// for (let i = 4; i < 7; i++){
 //     c.push(i)
    
 // }
@@ -74,7 +74,7 @@
 // let d = [1, 2, 3, 4, 5]
 
 
-// for (i = 0; i < 3; i++){
+// for (let i = 0; i < 3; i++){
 //     d.shift()
    
 // }
@@ -86,7 +86,7 @@
 
 
 
-// for (i = 0; i < 3; i++){
+// for (let i = 0; i < 3; i++){
 //     d.pop()
    
 // }
@@ -128,7 +128,7 @@
 
 
 
-//  for (i = 0;i < f.length; i++){
+//  for (let i = 0;i < f.length; i++){
 //         if (f[i] % 2 === 0){
 //             console.log(f[i])
              
@@ -146,7 +146,7 @@
 // let k = []
 
 
-// for (i = 0; i < g.length; i++){
+// for (let i = 0; i < g.length; i++){
 //     k[i] = g[i];
 // }
 
@@ -166,7 +166,7 @@
 // let arr = [ 'a', 'b', 'c']
 
 // let newArr = []
-// for (i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++){
 //       newArr = newArr + arr[i]
 //     }
 //     console.log(newArr)
@@ -261,7 +261,7 @@
 
 
 // for (let i = 0;i < arr.length; i++){
-//   if (2 === i%3){
+//   if (arr[i] % 3 === 0){
 //           arr[i] = 'okten'
           
 //         }
@@ -347,7 +347,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // arr2 = []
 
 
-// for (i = 0; i < 100; i++){
+// for (let i = 0; i < 100; i++){
 //   if(i%2 === 0){
 //     arr2.push(i)
 //   }
@@ -355,7 +355,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 
 // console.log(arr2)
 
-// for (i = 0; i < 100; i++){
+// for (let i = 0; i < 100; i++){
 //   if(i%2 === 1){
 //     arr2.push(i)
 //   }
@@ -376,7 +376,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // arr2 = []
 
 
-// for (i = 0; i < 20; i++){
+// for (let i = 0; i < 20; i++){
 //   arr2[i] = Math.floor(Math.random() * (733 - 8) +8)
 // }
 
@@ -391,7 +391,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // arr2 = []
 
 
-// for (i = 0; i < 20; i++){
+// for (let i = 0; i < 20; i++){
 //   num = Math.floor(Math.random() * (733 - 8) + 8)
 //     if(i%3 === 2 && num%2 === 0){
 //       console.log(num)
@@ -412,7 +412,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 
 // let arr3 = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ]
 
-// for (i = 0;i < arr3.length; i++){
+// for (let i = 0;i < arr3.length; i++){
 //   if (arr3[i +1]%2 === 0){
 //     console.log(arr3[i])
 //   }
@@ -428,7 +428,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // let arr4 = [100,250,50,168,120,345,188]
 // let sum = 0
 
-// for(i = 0;i< arr4.length; i++){
+// for(let i = 0;i< arr4.length; i++){
 //     sum += arr4[i]
 // }
 
@@ -454,7 +454,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // arr2 = []
 
 
-// for (i = 0; i < 20; i++){
+// for (let i = 0; i < 20; i++){
 //   num = Math.floor(Math.random() * (20 - 2) + 2)
     
       
@@ -469,7 +469,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 
 // let arr3 =[]
 
-// for (i = 0; i < arr2.length; i++){
+// for (let i = 0; i < arr2.length; i++){
   
 //   arr3.push(arr2[i] * 5) 
 // }
@@ -484,7 +484,7 @@ let arr = [2,17,13,6,22,31,45,66,100,-18]
 // let someArr = [true, 'hello', false, 55, 87, 'privet', 11]
 
 // let someNewArr = []
-// for(i = 0;i < someArr.length; i++){
+// for (let i = 0;i < someArr.length; i++){
 //   if (typeof someArr[i] === 'number'){
 //     console.log(someArr[i])
 //     someNewArr.push(someArr[i])

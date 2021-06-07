@@ -86,10 +86,10 @@
 // let index = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-// for (i = 0;i < index.length; i++){
+// for (let i = 0;i < index.length; i++){
 //     console.log(index[i])
 // }
-// for (i = 0;i < newArr.length; i++){
+// for (let i = 0;i < newArr.length; i++){
 //     console.log(newArr[i])
 // }
 
@@ -103,7 +103,7 @@
 // let mixType = [true, 'hello', 'dude', false, 23, 77, 'friday', true, 'YES', 22]
 
 
-// for (i = 0; i < mixType.length; i++){
+// for (let i = 0; i < mixType.length; i++){
 //     // console.log(mixTipe[i])
 //     if (typeof mixType[i] === 'boolean'){
 //         console.log(mixType[i])
@@ -111,7 +111,7 @@
   
 // }
 
-// for (i = 0; i < mixType.length; i++){
+// for (let i = 0; i < mixType.length; i++){
 //     // console.log(mixTipe[i])
 //     if (typeof mixType[i] === 'number'){
 //         console.log(mixType[i])
@@ -119,7 +119,7 @@
   
 // }
 
-// for (i = 0; i < mixType.length; i++){
+// for (let i = 0; i < mixType.length; i++){
 //     // console.log(mixTipe[i])
 //     if (typeof mixType[i] === 'string'){
 //         console.log(mixType[i])
@@ -169,7 +169,7 @@
 
 
 
-// for (i = 0;i < 100; i++){
+// for (let i = 0;i < 100; i++){
 //     console.log(i)
 //     document.write(`<div>${i}</div>`)
 // }
@@ -181,7 +181,7 @@
 
 
 
-// for (i = 0;i < 100; i +=2){
+// for (let i = 0;i < 100; i +=2){
 //     console.log(i)
 //     document.write(`<div>${i}</div>`)
 // }
@@ -198,7 +198,7 @@
 
 
 
-// for (i = 0;i < 100; i++){
+// for (let i = 0;i < 100; i++){
 //     if (i % 2){
 //         console.log(i)
 //          document.write(`<div>${i}</div>`)
@@ -208,7 +208,7 @@
 
 
 
-// for (i = 0;i < 100; i++){
+// for (let i = 0;i < 100; i++){
 //     if (i % 2 === 0){
 //         console.log(i)
 //          document.write(`<div>${i}</div>`)
@@ -261,8 +261,8 @@
 
 
 
-// for (i = 0; i < usersWithId.length; i++){
-//     for(j = 0;j < citiesWithId.length; j++){
+// for (let i = 0; i < usersWithId.length; i++){
+//     for(let j = 0;j < citiesWithId.length; j++){
 //         if(usersWithId[i].id === citiesWithId[j].user_id){
 //             usersWithId[i].address = citiesWithId[j]
 //         }

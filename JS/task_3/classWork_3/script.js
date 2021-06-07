@@ -45,7 +45,7 @@
 // let height = 40
 
 // function areaOfCyrcule(r, h){
-//     v = Math.PI * Math.pow(r, 2) * 40 
+//     v = Math.PI * Math.pow(r, 2) * h 
 //     return v
 // }
 
@@ -89,24 +89,89 @@
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
 
-let array = [9,8,0,4]
 
-function foo(arr, index){
-    let newArr = []
-    console.log(arr[index])
-    if(arr[index]){
-        
-        arr[index] = arr[index +1]
-        arr[index] = newArr
-        console.log(newArr)
-    }
-    return newArr
+
+
+// let array = [9,8,0,4]
+
+
+// function foo(arr, index){
+//     let array1 = [...arr]
     
-}
+//         let item = array1[index]
+//         array1[index] = array1[index +1]
+//         array1[index+1] = item
+        
+    
+//     return array1
+ 
+// }
 
 
-let res = foo(array, 2)
-console.log(res)
+// let res = foo(array, 1)
+// console.log(res)
 
+
+
+
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
+
+
+// let array1 = [1,0,6,0,3]
+// let array2 = [0,1,2,3,4]
+// let array3 = [0,0,1,0]
+
+
+// function endZero(arr){
+//     let zero = []
+//     for(item of arr){
+//         if(item === 0){
+//             zero.push(item)
+//         }else{
+//             zero.unshift(item)
+//         }
+//     }
+//     return zero
+// }
+
+
+
+// let res = endZero(array3)
+// console.log(res)
+
+
+// - Дано список імен.
+// let n1 = '    Harry       Potter      '
+// let n2 = '    Ron       Whisley      '
+// let n3 = '    Hermione       Granger      '
+// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger
+
+
+
+// let n1 = '    Harry       Potter      '
+// let n2 = '    Ron       Whisley      '
+// let n3 = '    Hermione       Granger      '
+
+// function valid(str){
+//     str = str.trim()
+//     str = str.split(' ')
+//     str.splice(1, str.length - 3)
+
+//     str = str.toString()
+//     str = str.replace(',,', ' ')
+//     return str
+// }
+
+// let correct = valid(n3)
+// console.log(correct)
 
 
