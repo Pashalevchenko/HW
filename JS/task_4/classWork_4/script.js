@@ -169,29 +169,94 @@
 //    }
 
 
-
-function Tegs(name, action, atributs, titleOfAttr, actionOfAttr){
-    this.name = name
-    this.action = action
-    this.atributs = function atributs(titleOfAttr, actionOfAttr) {
-        this.titleOfAttr = titleOfAttr
-        this.titleOfAttr = titleOfAttr
-
-        
-    }
-
+// function DescriptionTag (titleOfTag, action, attrs) {
+//           this.titleOfTag = titleOfTag;
+//           this.action = action;
+//           this.attrs = attrs;
     
+//           this.output = function () {
+//               console.log(this);
+//           }
+//        }
     
-  
-    }
+//     let a = new DescriptionTag('a', 'Устанавливает ссылку или якорь', [
+//        { accesskey: 'Активация ссылки с помощью комбинации клавиш' },
+//        { coords: 'Устанавливает координаты активной области' },
+//        { download: 'Предлагает скачать указанный по ссылке файл' },
+//     ]);
+//     let div = new DescriptionTag(
+//        'div',
+//        'Выделения фрагмента документа с целью изменения вида содержимого',
+//        [
+//           { align: 'Задает выравнивание содержимого тега' },
+//           { title: 'Добавляет всплывающую подсказку к содержимому' },
+//        ],
+//     );
+//     let h1 = new DescriptionTag(
+//        'h1',
+//        'Предлагает шесть заголовков разного уровня',
+//        [{ align: 'Определяет выравнивание заголовка' }],
+//     );
+//     let span = new DescriptionTag(
+//        'span',
+//        'Определения строчных элементов документа',
+//        ['Для этого тега доступны универсальные атрибуты'],
+//     );
+//     let input = new DescriptionTag(
+//        'input',
+//        'Предназначен для создания текстовых полей, различных кнопок',
+//        [
+//           { accesskey: 'Переход к элементу с помощью комбинации клавиш' },
+//           { align: 'Определяет выравнивание изображения' },
+//           { formaction: 'Определяет адрес обработчика формы' },
+//        ],
+//     );
+//     let form = new DescriptionTag('form', 'Устанавливает форму на веб-странице', [
+//        {
+//           action:
+//              'Адрес программы или документа, который обрабатывает данные формы',
+//        },
+//        { autocomplete: 'Включает автозаполнение полей формы' },
+//        {
+//           novalidate:
+//              'Отменяет встроенную проверку данных формы на корректность ввода',
+//        },
+//     ]);
+//     let option = new DescriptionTag(
+//        'option',
+//        'Определяет отдельные пункты списка, создаваемого с помощью контейнера',
+//        [
+//           { disabled: 'Заблокировать для доступа элемент списка' },
+//           { label: 'Указание метки пункта списка' },
+//           {
+//              selected: 'Заранее устанавливает определенный пункт списка выделенным',
+//           },
+//        ],
+//     );
+//     let select = new DescriptionTag(
+//        'select',
+//        'создать элемент интерфейса в виде раскрывающегося списка',
+//        [
+//           {
+//              accesskey:
+//                 'Позволяет перейти к списку с помощью некоторого сочетания клавиш',
+//           },
+//           {
+//              autofocus:
+//                 'Устанавливает, что список получает фокус после загрузки страницы',
+//           },
+//           {
+//              multiple:
+//                 'Позволяет одновременно выбирать сразу несколько элементов списка',
+//           },
+//        ],
+//     );
     
-    
+//     a.output();
+//     div.output();
+//     span.output();
+//     input.output();
+//     form.output();
+//     option.output();
+//     select.output();
 
-    
-   
-
-
-const a = new Tegs('a', 'Ссылка','fsdfsdf', 'sdfsfsdfs', 'aefrfer' )
-console.log(a)
-
-// console.log(atributs)

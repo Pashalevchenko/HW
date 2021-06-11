@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tov">
+
+    </div>
+
+
+    <script>
+// let tovar = localStorage.getItem('tovar')
+// console.log(tovar)
+
+let newArr = []
+
+
+for (let i = 0; i < localStorage.length; i++){
+    newArr.push(localStorage.getItem([i]))
+}
+
+
+
+
+// let a = localStorage.getItem(key)
+// console.log(a)
+// for (const key in localStorage) {
+//     // console.log(localStorage.getItem(key));
+//     if(localStorage.getItem(key)){
+//         console.log(localStorage.getItem(key));
+//         newArr.push(localStorage.getItem(key))
+        
+//     }
+// }
+
+console.log(newArr)
+    </script>
+</body>
+</html>
