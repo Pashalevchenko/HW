@@ -34,19 +34,10 @@
 
         }
         
-        
 for (let i = 1; i < localStorage.length+1; i++){
     newArr.push(localStorage.getItem([i]).split(','))
-
-    
 }
-
-
-
 for(item of newArr){
-        // console.log(item)
-        
-
         let newElem = document.createElement('div')
         newElem.style.background = '#808080'
         newElem.style.padding = '20px'
@@ -71,11 +62,6 @@ for(item of newArr){
         div.appendChild(newElem)
         
     }
-
-
-
-
-    
     function del(){
         let delite = this.parentElement
         div.removeChild(delite)
