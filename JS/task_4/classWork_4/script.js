@@ -5,71 +5,82 @@
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
 
 
-// class Human{
-//     constructor(name, age, food){
-//         this.name = name
-//         this.age = age
-//         this.food = food
+class Human{
+    constructor(name, age, food){
+        this.name = name
+        this.age = age
+        this.food = food
 
-//     }
-// }
+    }
+}
 
-// class Popelushka extends Human{
-//     constructor(name, age, food){
-//         super(name, age, food)
+class Popelushka{
+    constructor(name, age, food){
+        this.name = name
+        this.age = age
+        this.food = food
 
         
         
-//     }
+    }
 
-//     pushArr(){
-//         arr.push(this)
-//     }
+    pushArr(){
+        arr.push(this)
+    }
             
-// }
+}
 
-// class Prince extends Human{
-//     constructor(name, age, food){
-//         super(name, age, food)
-//     }
-// }
+class Prince{
+    constructor(name, age, food){
+        this.name = name
+        this.age = age
+        this.food = food
 
-// let arr = []
-
-// const angelina = new Popelushka ('angelina', 18, 36)
-// const nastya = new Popelushka('nastya', 17, 38)
-// const karina = new Popelushka('karina', 15, 34)
-// const olya = new Popelushka('olya', 18, 33)
-// const dasha = new Popelushka('dasha', 18, 40)
-// const vika = new Popelushka('vika', 25, 39)
-// const natasha = new Popelushka('natasha', 35, 32)
-// const alina = new Popelushka('alina', 17, 41)
-// const masha = new Popelushka('masha', 26, 44)
-// const lera = new Popelushka('lera', 20, 31)
-// const prince = new Prince('prince', 30, 31)
+    }
 
 
-// angelina.pushArr()
-// nastya.pushArr()
-// karina.pushArr()
-// olya.pushArr()
-// dasha.pushArr()
-// vika.pushArr()
-// natasha.pushArr()
-// alina.pushArr()
-// masha.pushArr()
-// lera.pushArr()
+    findPrincess (){
+        let find = arr.find(item => item.food === prince.food)
+        console.log(find)
+        
+    
+    }
+    
+
+    
+}
+
+let arr = []
+
+const angelina = new Popelushka ('angelina', 18, 36)
+const nastya = new Popelushka('nastya', 17, 38)
+const karina = new Popelushka('karina', 15, 31)
+const olya = new Popelushka('olya', 18, 33)
+const dasha = new Popelushka('dasha', 18, 40)
+const vika = new Popelushka('vika', 25, 39)
+const natasha = new Popelushka('natasha', 35, 32)
+const alina = new Popelushka('alina', 17, 41)
+const masha = new Popelushka('masha', 26, 44)
+const lera = new Popelushka('lera', 20, 34)
+const prince = new Prince('prince', 30, 31)
+
+angelina.pushArr()
+nastya.pushArr()
+karina.pushArr()
+olya.pushArr()
+dasha.pushArr()
+vika.pushArr()
+natasha.pushArr()
+alina.pushArr()
+masha.pushArr()
+lera.pushArr()
 
 
-// console.log(prince.food)
-// console.log(arr.food)
+prince.findPrincess()
 
 
-// for(food of arr){
-//     if(food.food === prince.food){
-//         console.log(`Prince found Popelushka ${food.name}`)
-//     }
-// }
+
+
 
 
 
@@ -105,15 +116,6 @@
 
 
 // }
-    
-    
-
-
-
-
-
-
-
 
 // const angelina = new Human ('angelina', 18, 36)
 // const nastya = new Human('nastya', 17, 38)
