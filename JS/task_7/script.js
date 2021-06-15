@@ -1,88 +1,94 @@
-// setTimeout(() =>{
-//     console.log('1')
-// }, 1000)
-// setTimeout(() =>{
-//     console.log('2')
-// }, 3000)
-// setTimeout(() =>{
-//     console.log('3')
-// }, 2000)
 
+let mood = 50
+let energe = 500
+let friend = 5
 
-maney = 100
-
-function goWork(doneJobe){
-    return new Promise((resolve, reject) => {
+function wakeUp(areYouWakeUp){
+    return new Promise((resolve, reject) =>{
         setTimeout(() =>{
-            if(doneJobe){
-                maney +=500
-                resolve(maney)
+            if(areYouWakeUp){
+                mood -=10
+                resolve(`Ка же рано. Но кофе сделает этот день ярче Настроение: ${mood}`)
             }else{
-                reject(`на твоем счету без изменений ${maney}`)
+                mood += 50
+                reject(false)
+                console.log(`O_O, Опоздал.... Настроение: ${mood}`)
             }
+                
+        }, 3000)
+    })
+}
 
+function drinkCoffe(timeForCoffe){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
+            if(timeForCoffe){
+                mood += 50
+                
+                resolve(`Люблю запах кофе поутру. Но время идти на работу Настроение:${mood}`)
+            }else{
+                mood = 0
+                reject(`Не сегодня. Настроение ${mood}`)
+            }
         }, 2000)
     })
 }
 
-function goShoping(maneyForStuff){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            if(maneyForStuff < 200){
-                console.log('без крос сегодня')
-                reject('not today')
-                
-            }else{
-                maneyForStuff -= 200
-                resolve(maneyForStuff)
-                
-            }
-        }, 1500)
-    })
-}
-
-function goEat (manyForFood){
-    return new Promise((resolve, reject) =>{
+function goWork(){
+    return new Promise((resolve, reject)=>{
         setTimeout(() =>{
-            if(manyForFood > 100){
-                manyForFood -= 150
-                resolve(manyForFood)
-                console.log('вкусно, но дорого')
+            if(mood > 70){
+                mood += 20
+                resolve(`Продуктивный день получился. Настроение: ${mood}`)
             }else{
-                reject('im hungry')
+                mood -=80
+                reject(`Худший день. Настроение: ${mood}`)
             }
-        }, 1000)
+        }, 5000)
     })
 }
 
-
-
-
-// goWork(true)
-//     .then(res => {
-//         console.log(res)
-//         return goShoping(maney)
-//     })
-//     .then(shop =>{
-//         console.log(shop)
-//         return goEat(shop)
-//     })
-//     .then(eat =>{
-//         console.log(eat)
-//     })
-//     .catch(resson =>{
-//         console.log(resson)
-//     })
-
-
-async function goZavod(){
-    let workRes = await goWork(true)
-    console.log(workRes)
-    let shop = await goShoping(workRes)
-    console.log(shop)
-    let eat = await goEat(shop)
-    console.log(eat)
+function drinkBeer(){
+    return new Promise((resolve) =>{
+        setTimeout(() =>{
+            
+            resolve(`После работы можно отдохнуть в компании друзей и пива...`)
+            setTimeout(() =>{
+                friend -= 1
+                console.log(`"Спустя час вы заметели, что пропал Коля" Друзей:${friend}, а было 5`)
+            }, 3000)
+        }, 2000)
+    })
 }
-goZavod()
+function findKolya(){
+    return new Promise
+}
+
+
+
+
+wakeUp(true)
+.then(result =>{
+    console.log(result)
+    return drinkCoffe(result)
+})
+.then(coffe =>{
+    console.log(coffe)
+    return goWork(mood)
+})
+.then(work =>{
+    console.log(work)
+    return drinkBeer()
+})
+.than(lostFriend =>{
+    console.log(lostFriend)
+})
+.catch(reason =>{
+    console.log(reason)
+})
+    
+
+
+
 
    
