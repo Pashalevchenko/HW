@@ -3,6 +3,7 @@ let mood = 50
 let energe = 500
 let friend = 5
 
+
 function wakeUp(areYouWakeUp){
     return new Promise((resolve, reject) =>{
         setTimeout(() =>{
@@ -51,21 +52,67 @@ function goWork(){
 function drinkBeer(){
     return new Promise((resolve) =>{
         setTimeout(() =>{
-            
-            resolve(`После работы можно отдохнуть в компании друзей и пива...`)
-            setTimeout(() =>{
-                friend -= 1
-                console.log(`"Спустя час вы заметели, что пропал Коля" Друзей:${friend}, а было 5`)
-            }, 3000)
+            friend -= 1
+            resolve(`После работы можно отдохнуть в компании друзей и пива...  Но "Спустя час вы заметели, что пропал Коля" Друзей:${friend}, а было 5`)
+           
         }, 2000)
     })
 }
-function findKolya(){
-    return new Promise
+
+function findFriend(){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=>{
+           let search = confirm('Отправиться на поиски Коли?')
+           if(search){
+               resolve('Вы покидаете шумный бар в надежде отыскть Колю')
+           }else{
+               reject('Кто такой Коля и зачем его искать?')
+           }
+        }, 1000)
+    })
 }
 
+function wherIsColya(){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() =>{
+            let find = confirm('Спустя час Вы так и не нашли колю. Продолжите поиски?')
+            if(find){
+                reject('Поиски не увенчались успехом. Вы вернулись в бар и хорошо провели остаток вечера')
+            }else{
+                resolve('Бог с тем Колей. Вы отправились домой спать')
+            }
 
+        }, 4000)
+    })
+}
 
+function home(){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve('Проснувшись утром Вы не сразу подумали о Коле. Далеко не сразу...')
+        }, 2500)
+    })
+}
+function whatHappend(){
+    return new Promise((resolve) =>{
+        setTimeout(() => {
+            resolve('Спустя 5 лет Вам стало интересно, что случилось с Колей')
+        }, 5000);
+    })
+}
+
+function final(){
+    return new Promise((resolve) =>{
+        setTimeout(() => {
+            resolve('Вы вспомнили насколько скучно было в том баре, и компания была далеко не очень')
+            console.log('Коля тогда просто ушел домой')
+            forImg = document.querySelector('.forImg')
+             let newElem = document.createElement('img')
+             newElem.src = 'https://pbs.twimg.com/media/Dsi4XzRWwAAF2MI.jpg'
+             forImg.appendChild(newElem)
+        }, 2000);
+    })
+}
 
 wakeUp(true)
 .then(result =>{
@@ -80,8 +127,31 @@ wakeUp(true)
     console.log(work)
     return drinkBeer()
 })
-.than(lostFriend =>{
+.then(lostFriend =>{
     console.log(lostFriend)
+    return findFriend()
+})
+.then(findKola =>{
+    console.log(findKola)
+    return wherIsColya()
+})
+.then(lastTry =>{
+    console.log(lastTry)
+    return home()
+})
+.then(morning =>{
+    console.log(morning)
+    return whatHappend()
+})
+.then(afterYear =>{
+    console.log(afterYear)
+    return final()
+})
+.then(remembers =>{
+    console.log(remembers)
+})
+.finally(() =>{
+    
 })
 .catch(reason =>{
     console.log(reason)
