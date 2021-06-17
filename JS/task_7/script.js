@@ -10,11 +10,11 @@ function wakeUp(areYouWakeUp){
             if(areYouWakeUp){
                 mood -=10
                 resolve(`Ка же рано. Но кофе сделает этот день ярче Настроение: ${mood}`)
-            }else{
-                mood += 50
-                reject(false)
-                console.log(`O_O, Опоздал.... Настроение: ${mood}`)
+                return
             }
+                mood += 50
+                reject(`O_O, Опоздал.... Настроение: ${mood}`)
+            
                 
         }, 3000)
     })
@@ -25,12 +25,12 @@ function drinkCoffe(timeForCoffe){
         setTimeout(() =>{
             if(timeForCoffe){
                 mood += 50
-                
                 resolve(`Люблю запах кофе поутру. Но время идти на работу Настроение:${mood}`)
-            }else{
+                return
+            }
                 mood = 0
                 reject(`Не сегодня. Настроение ${mood}`)
-            }
+            
         }, 2000)
     })
 }
@@ -41,10 +41,10 @@ function goWork(){
             if(mood > 70){
                 mood += 20
                 resolve(`Продуктивный день получился. Настроение: ${mood}`)
-            }else{
+                return
+            }else
                 mood -=80
                 reject(`Худший день. Настроение: ${mood}`)
-            }
         }, 5000)
     })
 }
@@ -65,9 +65,10 @@ function findFriend(){
            let search = confirm('Отправиться на поиски Коли?')
            if(search){
                resolve('Вы покидаете шумный бар в надежде отыскть Колю')
-           }else{
-               reject('Кто такой Коля и зачем его искать?')
+               return 
            }
+           reject('Кто такой Коля и зачем его искать?')
+           
         }, 1000)
     })
 }
@@ -78,9 +79,10 @@ function wherIsColya(){
             let find = confirm('Спустя час Вы так и не нашли колю. Продолжите поиски?')
             if(find){
                 reject('Поиски не увенчались успехом. Вы вернулись в бар и хорошо провели остаток вечера')
-            }else{
-                resolve('Бог с тем Колей. Вы отправились домой спать')
+                return
             }
+                resolve('Бог с тем Колей. Вы отправились домой спать')
+            
 
         }, 4000)
     })
