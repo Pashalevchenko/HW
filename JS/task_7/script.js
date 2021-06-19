@@ -4,6 +4,7 @@ let energe = 500
 let friend = 5
 
 
+
 function wakeUp(areYouWakeUp){
     return new Promise((resolve, reject) =>{
         setTimeout(() =>{
